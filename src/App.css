@@ -1,0 +1,32 @@
+body {
+  font-size: 16px;
+  line-height: 1.6;
+  overflow-x: hidden;
+}
+.container-fluid {
+  margin: 0 auto;
+  max-width: 1200px;
+  /* padding: 0 15px; */
+}
+.logo {
+  font-size: 22px;
+  padding: 12px 8px;
+  text-transform: uppercase;
+}
+.ant-layout-header {
+  background: #fff !important;
+
+}
+.search-box{
+  width: auto;
+ 
+}
+.header{
+    display: flex;
+    justify-content: space-between !important;
+    align-items: center;
+    background: #1cbbb4;
+}
+.header-menu{
+  background: #1cbbb4;
+}

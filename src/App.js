@@ -5,11 +5,9 @@ import { Switch, Route } from "react-router-dom";
 import { Layout } from "antd";
 function App() {
   return (
-    <div className="App">
-      <div>
-        <Navbar />
-      </div>
-      <div className="routes">
+    <div className="main-layout">
+      <Navbar />
+      <div className="routes container-fluid">
         <Layout>
           <Switch>
             <Route exact path="/">
