@@ -1,24 +1,24 @@
 import "./App.css";
-// import "antd/dist/antd.css";
-import { Navbar, Homepage, ProductDetails } from "./components";
+import { Header, Homepage, ProductDetails } from "./components";
 import { Switch, Route } from "react-router-dom";
-import { Layout } from "antd";
+import {Container} from "react-bootstrap"
 function App() {
   return (
     <div className="main-layout">
-      <Navbar />
-      <div className="routes container-fluid">
-        <Layout>
-          <Switch>
-            <Route exact path="/">
-              <Homepage />
-            </Route>
-            <Route exact path="/ProductDetails">
-              <ProductDetails />
-            </Route>
-          </Switch>
-        </Layout>
-      </div>
+      <Container>
+        <Header />
+      </Container>
+      <Container>
+        {/* <Box sx={{ bgcolor: '#cfe8fc', height: '100vh' }} /> */}
+        <Switch>
+          <Route exact path="/">
+            <Homepage />
+          </Route>
+          <Route exact path="/ProductDetails">
+            <ProductDetails />
+          </Route>
+        </Switch>
+      </Container>
     </div>
   );
 }
